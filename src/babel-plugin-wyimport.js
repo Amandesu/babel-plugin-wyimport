@@ -1,10 +1,6 @@
-import {uniq, extend, flatten, cloneDeep } from "lodash"
 
-
-/*var babel = require('babel-core');
+var babel = require('babel-core');
 var t = require('babel-types');
-const code = `import {uniq, extend, flatten, cloneDeep } from "lodash"`;
-
 const visitor = {
     // 对import转码
     ImportDeclaration(path, _ref = {opts:{}}){
@@ -21,11 +17,11 @@ const visitor = {
 
         }
     }
+
+};
+module.exports = function (babel) {
+    return {
+        visitor
+    };
 }
 
-const result = babel.transform(code, {
-    plugins: [{
-        visitor: visitor
-    }]
-})
-console.log(result.code)*/

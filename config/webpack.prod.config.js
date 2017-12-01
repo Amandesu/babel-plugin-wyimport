@@ -72,9 +72,9 @@ module.exports = {
                 options:{
                     presets:["react-app"],
                     plugins:[
-                        //["wyimport", {libraryName:"lodash"}]
+                        ["fiveone", {}]
                     ],
-                    compact: true
+                    compact: true//{libraryName:"lodash"}
                     //cacheDirectory: true
                 }
             },
